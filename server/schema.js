@@ -44,7 +44,11 @@ const resolvers = {
   Cat: {
     servants: (parent, args, context) =>
       db.humans.filter(({ id }) => parent.servants.includes(id)),
-  }
+  },
+  Human: {
+    cats: (parent, args, context) =>
+      db.cats.filter(({ id }) => parent.cats.includes(id)),
+  },
 }
 
 module.exports = { typeDefs, resolvers }
