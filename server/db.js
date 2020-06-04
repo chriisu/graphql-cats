@@ -1,6 +1,6 @@
 const db = {
   cats: [
-    { name: 'Miimi', age: 14, id: 101, servants: [] },
+    { name: 'Miimi', age: 14, id: 101, servants: [102] },
     { name: 'Dodo', age: 8, id: 103, servants: [] },
   ],
   humans: [{ name: 'Chris', id: 102, cats: [] }],
